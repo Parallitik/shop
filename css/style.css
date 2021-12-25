@@ -1,0 +1,332 @@
+:root {
+  --black: #222222;
+  --pink-bkg: #f1e4e6;
+  --pink-color: #f09ba7;
+  --white-text: #ffffff;
+  --grey-text: #9f9f9f;
+  --grey-bkg: #f8f8f8;
+  --grey-item-text: #5d5d5d;
+  --gery-service-text: #f8f8f8;
+}
+
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header {
+  background-color: var(--black);
+  min-height: 75px;
+}
+
+.header__link {
+  text-decoration: none;
+  margin: 0 0 0 33px;
+}
+
+.header__wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 0 0 0;
+}
+
+.header__logo-form-wrp {
+  display: flex;
+}
+
+.header__search {
+  margin: 0 0 0 41px;
+}
+
+.header__menu-btn {
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.brand {
+  display: flex;
+  margin: 0 0 63px 0;
+}
+
+.brand__title-wrp {
+  flex-grow: 1;
+  background-color: var(--pink-bkg);
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 92px;
+}
+
+.brand__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  text-transform: uppercase;
+}
+
+.brand__subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  display: block;
+}
+
+.brand__subtitle-pink {
+  color: var(--pink-color);
+}
+
+.sales__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sales__item {
+  width: 360px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  flex-direction: column;
+}
+
+.sales__item-offer-white {
+  color: var(--white-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sales__item-chapter-pink {
+  color: var(--pink-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sales__item_woman {
+  background-image: url(../img/sales-woman.svg);
+}
+
+.sales__item_men {
+  background-image: url(../img/sales-man.svg);
+}
+
+.sales__item_kids {
+  background-image: url(../img/sales-kids.svg);
+}
+
+.sales__item_accesories {
+  background-image: url(../img/sales-accesories.svg);
+  width: 100%;
+  margin: 30px 0 97px 0;
+}
+
+.products__title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 6px 0;
+}
+
+.products__subtitle {
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--grey-text);
+}
+
+.products-wrp {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 48px 0 18px 0;
+}
+
+.products__list {
+  margin: 0 0 30px 0;
+}
+
+.products__item-wrp {
+  background-color: var(--grey-bkg);
+}
+
+.products__item {
+  width: 360px;
+}
+
+.products__item-title {
+  padding: 25px 194px 0 18px;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.products__item-text {
+  padding: 13px 29px 0 17px;
+  margin: 13px 0 18px 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--grey-item-text);
+}
+
+.products__item-price {
+  padding: 0 290px 20px 18px;
+  color: #f16d7f;
+}
+
+.products__catalog-link {
+  text-align: center;
+  border: 1px solid #ff6a6a;
+  width: 211px;
+  padding: 14px 0 13px 0;
+  margin: 0 auto;
+}
+
+.products__catalog-link-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+  text-decoration: none;
+}
+
+.service-info {
+  background-color: var(--black);
+  margin: 95px 0 0 0;
+}
+
+.service-info__list {
+  display: flex;
+  padding: 103px 0 104px 0;
+  justify-content: space-between;
+}
+
+.service-info__item {
+  text-align: center;
+  width: 360px;
+}
+
+.service-info__item-title {
+  margin: 28px 0 16px 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gery-service-text);
+}
+
+.service-info__item-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gery-service-text);
+}
+
+.footer__bkg-wrp {
+  background-image: url(../img/footer-bkg.svg);
+  /* не совсем понимаю почему картинка bkg немного не так, как на макете,
+  хотя все элементы отцентрованы относительно контейнера */
+}
+
+.footer__woman-subscribe {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__woman {
+  text-align: center;
+  margin: 97px 0 126px 0;
+  width: 360px;
+  min-height: 225px;
+}
+
+.footer__woman-img {
+  border-radius: 50px;
+}
+
+.footer__woman-quote {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__woman-quote-italic {
+  font-style: italic;
+}
+
+.footer__subscribe {
+  text-align: center;
+  margin: 150px 0 0 0;
+  margin: 97px 0 126px 0;
+  width: 557px;
+}
+
+.footer__subscribe-title {
+  font-size: 24px;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 53px 0 0 0;
+}
+
+.footer__subscribe-text {
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.footer__subscribe-form {
+  padding: 32px 0 0 0;
+}
+
+.footer__copyright-wrp {
+  background-color: var(--black);
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyright-text {
+  margin: 30px 0 30px 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--gery-service-text);
+}
+
+.footer__socials-list {
+  display: flex;
+  padding: 24px 0 24px 0;
+}
+
+.footer__socials-item {
+  padding: 0 0 0 7px;
+}
