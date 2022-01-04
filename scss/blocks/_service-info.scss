@@ -1,0 +1,26 @@
+.service-info {
+  background-color: $black;
+  margin: 95px 0 0 0;
+
+  &__list {
+    display: flex;
+    padding: 103px 0 104px 0;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+    width: 360px;
+  }
+
+  &__item-title {
+    margin: 28px 0 16px 0;
+    @include font(24px);
+    color: $grey-service-text;
+  }
+
+  &__item-text {
+    @include font(14px, 17px, 300);
+    color: $grey-service-text;
+  }
+}

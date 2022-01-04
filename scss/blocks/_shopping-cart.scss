@@ -1,0 +1,10 @@
+.shopping-cart {
+  background-color: #f8f3f4;
+
+  &__text {
+    @include font(24px, 29px);
+    color: #f16d7f;
+    text-transform: uppercase;
+    padding: 60px 0 60px 0;
+  }
+}

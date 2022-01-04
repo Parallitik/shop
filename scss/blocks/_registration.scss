@@ -1,0 +1,21 @@
+.registration {
+  &__title-wrp {
+    background-color: #f8f3f4;
+  }
+
+  &__title-text {
+    @include font(24px, 29px);
+    color: #f16d7f;
+    text-transform: uppercase;
+    padding: 60px 0 60px 0;
+  }
+
+  &__content-wrp {
+    display: flex;
+  }
+
+  &__content-form {
+    width: 360px;
+    margin: 0 128px 96px 0;
+  }
+}

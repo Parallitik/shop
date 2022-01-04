@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -27,48 +27,48 @@
                 </div>
             </div>
             <div>
-                <button class="header__menu-btn">
+                <button id="burger" class="header__menu-btn">
                     <img src="./img/burger.svg" alt="burger">
                 </button>
                 <a class="header__link" href="./registration-page.html">
                     <img class="header__link-img" src="./img/person.svg" alt="person">
                 </a>
-                <a class="header__link" href="#">
+                <a class="header__link" href="./shopping-cart.html">
                     <img class="header__link-img" src="./img/basket.svg" alt="basket">
                 </a>
             </div>
         </div>
-        <nav class="header__nav nav">
-            <h2 class="nav-title">menu</h2>
-            <ul class="nav-list">
+        <nav id="menu" class="header__nav nav">
+        <h2 class="header__nav-title">menu</h2>
+            <ul class="header__nav-list">
                 <li class="nav-item nav-sub-item">
-                    <a class="nav-sub-item__link" href="#">man</a>
+                    <a class="nav-sub-item__chapter" href="#">man</a>
                     <ul class="nav-sub-item__list">
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Bags</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Denim</a></li>
-                        <li class="nav-sub-item__link"><a href="#">T-Shirts</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Bags</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Denim</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">T-Shirts</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a class="nav-sub-item__link" href="#">woman</a>
-                    <ul>
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Jackets & Coats</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Polos</a></li>
-                        <li class="nav-sub-item__link"><a href="#">T-Shirts</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Shirts</a></li>
+                    <a class="nav-sub-item__chapter" href="#">woman</a>
+                    <ul class="nav-sub-item__list">
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Jackets & Coats</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Polos</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">T-Shirts</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Shirts</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a class="nav-sub-item__link" href="#">kids</a>
-                    <ul>
-                        <li class="nav-sub-item__link"><a href="#">Accessories</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Jackets & Coats</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Polos</a></li>
-                        <li class="nav-sub-item__link"><a href="#">T-Shirts</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Shirts</a></li>
-                        <li class="nav-sub-item__link"><a href="#">Bags</a></li>
+                    <a class="nav-sub-item__chapter" href="#">kids</a>
+                    <ul class="nav-sub-item__list">
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Jackets & Coats</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Polos</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">T-Shirts</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Shirts</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Bags</a></li>
                     </ul>
                 </li>
             </ul>
@@ -105,7 +105,7 @@
         <section class="products container">
             <h2 class="products__title">Fetured Items</h2>
             <p class="products__subtitle">Shop for items based on what we featured in this week</p>
-            <div class="products-wrp">
+            <div class="products__wrp">
                 <ul class="products__list">
                     <li class="products__item">
                         <div class="products__item-wrp">

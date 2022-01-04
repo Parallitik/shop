@@ -1,0 +1,78 @@
+.header {
+  background-color: $black;
+  min-height: 75px;
+
+  &__nav {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #ffffff;
+    box-shadow: 0px 0 10px $grey-text;
+  }
+
+  &__nav-title {
+    text-transform: uppercase;
+    font-style: bold;
+    @include font(14px, 17px, 700);
+    padding: 37px 143px 24px 34px;
+  }
+
+  &__nav-list {
+    margin: 0 0 120px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin: 0 0 0 33px;
+  }
+
+  &__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0 0 0;
+  }
+
+  &__logo-form-wrp {
+    display: flex;
+  }
+
+  &__search {
+    margin: 0 0 0 41px;
+    display: flex;
+  }
+
+  &__search-form {
+    margin: 0 0 0 10px;
+  }
+
+  &__search-img:hover,
+  &__link-img:hover,
+  &__menu-btn:hover {
+    outline: 2px solid $white-text;
+  }
+
+  &__search-img:focus,
+  &__link-img:focus,
+  &__menu-btn:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__search-img:active,
+  &__link-img:active,
+  &__menu-btn:active {
+    outline: 2px solid $pink-color;
+  }
+
+  &__menu-btn {
+    border: 1px solid;
+    background-color: transparent;
+  }
+}
+
+.display-block {
+  display: block;
+}
