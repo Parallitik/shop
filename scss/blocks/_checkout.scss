@@ -1,0 +1,64 @@
+.checkout {
+  width: 360px;
+  background-color: #f5f3f3;
+  margin: 57px 0 0 0;
+
+  &__title {
+    text-align: end;
+    @include font(11px, 24px);
+    text-transform: uppercase;
+    color: #575757;
+    padding: 39px 34px 0 0;
+    margin: 0 0 12px 0;
+  }
+
+  &__subtitle {
+    text-align: end;
+    @include font(16px, 19px, 700);
+    text-transform: uppercase;
+    color: #575757;
+    padding: 0 37px 0 0;
+    margin: 0 0 21px 0;
+  }
+
+  &__total {
+    padding: 0 0 0 20px;
+  }
+
+  &__total-color {
+    padding: 0 0 0 20px;
+    color: #f16d7f;
+  }
+
+  &__line {
+    @include flex-center;
+  }
+
+  &__btn {
+    margin: 17px 0 42px 0;
+    text-align: center;
+    padding: 15px 0 16px 0;
+    width: 273px;
+    background-color: #f16d7f;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__btn:hover {
+    -webkit-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    -moz-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+  }
+
+  &__btn:active {
+    outline: 2px solid black;
+  }
+
+  &__btn-text {
+    color: #ffffff;
+    text-transform: uppercase;
+    @include font(16px, 19px, 300);
+  }
+}

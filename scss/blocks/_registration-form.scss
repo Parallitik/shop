@@ -1,0 +1,174 @@
+.registration-form {
+  &__name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name-title {
+    @include font(16px, 19px, 300);
+    margin: 64px 0 20px 0;
+  }
+
+  &__name-firstname {
+    @include font(13px, 16px, 300);
+    padding: 12px 0 15px 17px;
+    margin: 0 0 20px 0;
+    width: 360px;
+  }
+
+  &__name-firstname:hover {
+    outline: 2px solid #f16d7f;
+  }
+
+  &__name-firstname:active {
+    outline: 2px solid black;
+  }
+
+  &__name-firstname:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__name-lastname {
+    @include font(13px, 16px, 300);
+    padding: 12px 0 15px 17px;
+    margin: 0 0 20px 0;
+    width: 360px;
+  }
+
+  &__name-lastname:hover {
+    outline: 2px solid #f16d7f;
+  }
+
+  &__name-lastname:active {
+    outline: 2px solid black;
+  }
+
+  &__name-lastname:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__radio-label {
+    position: relative;
+  }
+
+  &__radio-label::before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    left: 0;
+    border: 1px solid #a4a4a4;
+    border-radius: 50%;
+  }
+
+  &__radio-male-text,
+  &__radio-female-text {
+    @include font(11px, 13px, 300);
+    padding: 0 20px 0 27px;
+  }
+
+  &__login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__login-title {
+    @include font(16px, 19px, 300);
+    margin: 33px 0 20px 0;
+  }
+
+  &__login-email {
+    @include font(13px, 16px, 300);
+    padding: 12px 0 15px 17px;
+    margin: 0 0 20px 0;
+    width: 360px;
+  }
+
+  &__login-email:hover {
+    outline: 2px solid #f16d7f;
+  }
+
+  &__login-email:active {
+    outline: 2px solid black;
+  }
+
+  &__login-email:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__login-password {
+    @include font(13px, 16px, 300);
+    padding: 12px 0 15px 17px;
+    margin: 0 0 15px 0;
+    width: 360px;
+  }
+
+  &__login-password:hover {
+    outline: 2px solid #f16d7f;
+  }
+
+  &__login-password:active {
+    outline: 2px solid black;
+  }
+
+  &__login-password:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__bottom-text {
+    @include font(13px, 16px, 300);
+    margin: 0 0 39px 0;
+    color: #b1b1b1;
+  }
+
+  &__btn {
+    text-transform: uppercase;
+    background-color: #f16d7f;
+    border: none;
+    color: white;
+    @include flex-center;
+  }
+
+  &__btn:hover {
+    -webkit-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    -moz-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+  }
+
+  &__btn:active {
+    outline: 2px solid black;
+  }
+
+  &__btn:focus {
+    -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  }
+
+  &__btn-text {
+    @include font(14px, 17px);
+    display: block;
+    padding: 16px 20px 17px 29px;
+  }
+
+  &__btn-arrow {
+    padding: 0 20px 0 0;
+  }
+}
+
+[type="radio"]:checked + .registration-form__radio-label::before {
+  background: #a4a4a4;
+  border-color: black;
+}
+
+[type="radio"]:hover + .registration-form__radio-label::before {
+  border-color: #f16d7f;
+}

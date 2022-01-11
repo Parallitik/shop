@@ -1,0 +1,31 @@
+.card-info {
+  &__list {
+    padding: 22px 0 62px 31px;
+  }
+
+  &__item-title {
+    @include font(24px, 29px, 400, regular);
+    text-transform: uppercase;
+    margin: 0 0 42px 0;
+  }
+
+  &__item-price,
+  &__item-color,
+  &__item-size,
+  &__item-quantity {
+    @include font($line-height: 26px, $font-style: regular);
+    color: #575757;
+    padding: 0 0 6px 0;
+  }
+
+  &__item-price-color {
+    color: #f16d7f;
+  }
+
+  &__item-quantity-wrp {
+    display: inline-block;
+    border: 1px solid #eaeaea;
+    margin: 0 0 0 24px;
+    padding: 2px 16px;
+  }
+}

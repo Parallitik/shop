@@ -76,51 +76,61 @@
             </nav>
     </header>
     <main>
-        <section class="registration">
-            <div class="registration__title-wrp">
-                <div class="container">
-                    <h2 class="registration__title-text">registration</h2>
+        <section class="shopping-cart">
+                <div class="shopping-cart-wrp container">
+                    <h2 class="shopping-cart__text">shopping cart</h2>
+                </div>
+        </section>
+        <section class="cart-content container">
+            <div class="cart-content__cards">
+                <div class="cart-content__cards-wrp">
+                    <ul class="cart-content__cards-list">
+                        <li class="cart-content__cards-item card-info">
+                            <img class="card-info__img" src="./img/product-3.jpg" alt="card-1" width="262" height="306">
+                            <ul class="card-info__list">
+                                <li class="card-info__item-title">mango people t-shirt</li>
+                                <li class="card-info__item-price">Price:<span class="card-info__item-price-color"> $300</span></li>
+                                <li class="card-info__item-color">Color: Red</li>
+                                <li class="card-info__item-size">Size: Xl</li>
+                                <li class="card-info__item-quantity">Quantity:<span class="card-info__item-quantity-wrp">2</span></li>
+                            </ul>
+                        </li>
+                        <li class="cart-content__cards-item card-info">
+                            <img class="card-info__img" src="./img/product-7.jpg" alt="card-2" width="262" height="306">
+                            <ul class="card-info__list">
+                                <li class="card-info__item-title">mango people t-shirt</li>
+                                <li class="card-info__item-price">Price:<span class="card-info__item-price-color"> $300</span></li>
+                                <li class="card-info__item-color">Color: Red</li>
+                                <li class="card-info__item-size">Size: Xl</li>
+                                <li class="card-info__item-quantity">Quantity:<span class="card-info__item-quantity-wrp">2</span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-content__cards-btn-wrp">
+                    <button class="cart-content__cards-btn">clear shopping cart</button>
+                    <button class="cart-content__cards-btn">clear shopping cart</button>
                 </div>
             </div>
-        </section>
-        <section class="registration__content">
-            <div class="registration__content-wrp container">
-                <form class="registration__content-form registration-form" action="#">
-                    <fieldset class="registration-form__name">
-                        <p class="registration-form__name-title">Your Name</p>
-                        <legend class="visually-hidden">your name</legend>
-                        <input class="registration-form__name-firstname" id="first-name" type="text" required placeholder="First Name">
-                        <label class="visually-hidden" for="first-name">first name</label>
-                        <input class="registration-form__name-lastname" id="last-name" type="text" required placeholder="Last Name">
-                        <label class="visually-hidden" for="last-name">last name</label>
+            <div class="cart-content__shipping">
+                <form class="cart-content__shipping-form" action="#">
+                    <fieldset class="cart-content__shipping-adress">
+                        <p class="cart-content__shipping-title">shipping adress</p>
+                        <legend class="visually-hidden">shipping info</legend>
+                        <input class="cart-content__shipping-city" id="city" type="text" required placeholder="Bangladesh">
+                        <label class="visually-hidden" for="city">city</label>
+                        <input class="cart-content__shipping-state" id="state" type="text" required placeholder="State">
+                        <label class="visually-hidden" for="state">state</label>
+                        <input class="cart-content__shipping-postcode" id="postcode" type="text" required placeholder="Postcode / Zip">
+                        <label class="visually-hidden" for="postcode">postcode</label>
                     </fieldset>
-                    <div class="registration-form__radio">
-                        <input class="registration-form__radio-male" type="radio" id="male" name="radio">
-                        <label class="registration-form__radio-male-text registration-form__radio-label" for="male">Male</label>
-                        <input class="registration-form__radio-female" type="radio" id="female" name="radio">
-                        <label class="registration-form__radio-female-text registration-form__radio-label" for="female">Female</label>
-                    </div>
-                    <fieldset class="registration-form__login">
-                        <p class="registration-form__login-title">Login details</p>
-                        <legend class="visually-hidden">login details</legend>
-                        <input class="registration-form__login-email" id="email" type="email" required placeholder="Email">
-                        <label class="visually-hidden" for="email">email</label>
-                        <input class="registration-form__login-password" id="password" type="password" required placeholder="Password">
-                        <label class="visually-hidden" for="password">password</label>
-                    </fieldset>
-                    <p class="registration-form__bottom-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    <button class="registration-form__btn" type="submit"><span class="registration-form__btn-text">join now</span><img class="registration-form__btn-arrow" src="./img/img-registration/arrow-btn.svg" alt="arrow"></button>
+                    <button class="cart-content__shipping-form-btn">get a quote</button>
                 </form>
-                <div class="registration-content__text">
-                    <p class="registration-content__text-title">loyalty has its perks</p>
-                    <p class="registration-content__text-title-subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                    <ul class="registration-content__text-list">
-                        <li class="registration-content__text-item">15% off welcome offer</li>
-                        <li class="registration-content__text-item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="registration-content__text-item">$10 off a purchase on your birthday</li>
-                        <li class="registration-content__text-item">Early access to products</li>
-                        <li class="registration-content__text-item">Exclusive offers & rewards</li>
-                    </ul>
+                <div class="cart-content__shipping-checkout-info checkout">
+                    <p class="checkout__title">sub total<span class="checkout__total">$900</span></p>
+                    <p class="checkout__subtitle">grand total<span class="checkout__total-color">$900</span></p>
+                    <div class="checkout__line"><img src="./img/img-cart/line.svg" alt="line"></div>
+                    <button class="checkout__btn"><span class="checkout__btn-text">proceed to checkout</span></button>
                 </div>
             </div>
         </section>
