@@ -1,10 +1,13 @@
 .header {
   background-color: $black;
   min-height: 75px;
+  display: flex;
+  align-items: center;
 
   &__nav {
     display: none;
     position: absolute;
+    z-index: 1;
     right: 0;
     top: 75px;
     background-color: #ffffff;
@@ -31,11 +34,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 19px 0 0 0;
   }
 
   &__logo-form-wrp {
     display: flex;
+
+    @include tablet {
+      margin: 0 0 0 16px;
+    }
+
+    @include mobile {
+      margin: 0;
+    }
   }
 
   &__search {

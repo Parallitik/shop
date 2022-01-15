@@ -6,5 +6,9 @@
     color: #f16d7f;
     text-transform: uppercase;
     padding: 60px 0 60px 0;
+
+    @include mobile {
+      text-align: center;
+    }
   }
 }

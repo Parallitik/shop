@@ -3,6 +3,12 @@
   background-color: #f5f3f3;
   margin: 57px 0 0 0;
 
+  @include tablet {
+    width: 360px;
+    margin: 39px 0 0 0;
+    height: 214px;
+  }
+
   &__title {
     text-align: end;
     @include font(11px, 24px);

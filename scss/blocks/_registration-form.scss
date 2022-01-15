@@ -13,7 +13,6 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-    width: 360px;
   }
 
   &__name-firstname:hover {
@@ -34,7 +33,6 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-    width: 360px;
   }
 
   &__name-lastname:hover {
@@ -71,6 +69,16 @@
     padding: 0 20px 0 27px;
   }
 
+  &__radio-other-text {
+    @include font(11px, 13px, 300);
+    padding: 0 20px 0 27px;
+    display: none;
+
+    @include tablet {
+      display: inline-block;
+    }
+  }
+
   &__login {
     display: flex;
     flex-direction: column;
@@ -85,7 +93,6 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-    width: 360px;
   }
 
   &__login-email:hover {
@@ -106,7 +113,6 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 15px 0;
-    width: 360px;
   }
 
   &__login-password:hover {
