@@ -1,12 +1,35 @@
 .card-info {
+  &__img {
+    object-fit: cover;
+
+    @include mobile {
+      width: 144px;
+      height: 188px;
+    }
+  }
+
   &__list {
-    padding: 22px 0 62px 31px;
+    padding: 22px 45px 0 31px;
+
+    @include tablet {
+      width: 80%;
+    }
+
+    @include mobile {
+      width: 39%;
+      padding: 13px 0 0 17px;
+    }
   }
 
   &__item-title {
-    @include font(24px, 29px, 400, regular);
+    @include font(24px, 29px, 400);
     text-transform: uppercase;
     margin: 0 0 42px 0;
+
+    @include mobile {
+      @include font(16px, 19px);
+      margin: 0 0 25px 0;
+    }
   }
 
   &__item-price,
@@ -16,6 +39,15 @@
     @include font($line-height: 26px, $font-style: regular);
     color: #575757;
     padding: 0 0 6px 0;
+
+    @include mobile {
+      @include font(14px, 17px);
+      padding: 0 0 4px 0;
+    }
+  }
+
+  &__item-quantity {
+    margin: 0 0 22px 0;
   }
 
   &__item-price-color {

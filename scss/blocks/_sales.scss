@@ -6,11 +6,22 @@
   }
 
   &__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
     @include flex-center;
     border: 1px solid;
     flex-direction: column;
+    background-size: cover;
+
+    @include tablet {
+      width: 31%;
+      min-height: 167px;
+    }
+
+    @include mobile {
+      width: 100%;
+      min-height: 247px;
+    }
   }
 
   &__item-offer-white {
@@ -29,10 +40,18 @@
 
   &__item_woman {
     background-image: url(../img/sales-woman.svg);
+
+    @include mobile {
+      margin: 0 0 32px 0;
+    }
   }
 
   &__item_men {
     background-image: url(../img/sales-man.svg);
+
+    @include mobile {
+      margin: 0 0 32px 0;
+    }
   }
 
   &__item_kids {
@@ -43,5 +62,16 @@
     background-image: url(../img/sales-accesories.svg);
     width: 100%;
     margin: 30px 0 97px 0;
+    min-height: 178px;
+
+    @include tablet {
+      min-height: 116px;
+      margin: 30px 0 154px 0;
+    }
+
+    @include mobile {
+      min-height: 111px;
+      margin: 30px 0 64px 0;
+    }
   }
 }

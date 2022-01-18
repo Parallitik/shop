@@ -6,8 +6,19 @@ body {
 }
 
 .container {
-  width: 1140px;
+  width: 71%;
+  // 1140px
   margin: 0 auto;
+
+  @include tablet {
+    width: 96%;
+    // 734px
+  }
+
+  @include mobile {
+    width: 91%;
+    // 343px
+  }
 }
 
 .visually-hidden {

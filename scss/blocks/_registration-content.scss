@@ -1,21 +1,48 @@
 .registration-content {
   &__text {
+    width: 57%;
     margin: 64px 0 0 0;
     @include font(24px, 29px, 300);
+
+    @include tablet {
+      width: 48%;
+      @include font(16px, 19px, 300);
+    }
+
+    @include mobile {
+      width: 100%;
+      margin: 0 0 100px 0;
+    }
   }
 
   &__text-title {
     margin: 0 0 22px 0;
     text-transform: uppercase;
+
+    @include tablet {
+      margin: 0 0 32px 0;
+    }
   }
 
   &__text-title-subtitle {
     margin: 0 0 21px 0;
+
+    @include tablet {
+      margin: 0 0 22px 0;
+    }
   }
 
   &__text-item {
     padding: 0 0 16px 43px;
     position: relative;
+
+    &_penult {
+      padding: 0 0 16px 43px;
+
+      @include tablet {
+        padding: 0 0 26px 43px;
+      }
+    }
   }
 
   &__text-item::before {
