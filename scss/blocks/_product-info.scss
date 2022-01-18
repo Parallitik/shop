@@ -1,0 +1,128 @@
+.product-info {
+  @include flex-center;
+  flex-direction: column;
+  border: 2px solid #eaeaea;
+  margin: 0 0 129px 0;
+  position: relative;
+  top: -65px;
+  background-color: white;
+
+  @include mobile {
+    margin: 0 0 64px 0;
+  }
+
+  &__wrp {
+    width: 71%;
+    // 1140px
+    margin: 0 auto;
+
+    @include tablet {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__collection {
+    position: relative;
+    text-transform: uppercase;
+    @include font(14px, 17px, 300);
+    padding: 64px 0 0 0;
+    color: #f16d7f;
+
+    &::after {
+      display: flex;
+      content: "";
+      border: 3px solid #ef5b70;
+      width: 43%;
+      position: absolute;
+      bottom: -12px;
+      left: 30%;
+    }
+  }
+
+  &__brand {
+    text-transform: uppercase;
+    @include font(18px, 22px, 300);
+    margin: 48px 0 48px 0;
+    color: #4d4d4d;
+  }
+
+  &__description {
+    @include font(14px, 17px, 300);
+    color: #5e5e5e;
+    text-align: center;
+    width: 50%;
+
+    @include tablet {
+      width: 72%;
+    }
+
+    @include mobile {
+      @include font(14px, 20px, 300);
+    }
+  }
+
+  &__price {
+    @include font(24px, 29px, 300);
+    color: #ef5b70;
+    margin: 32px 0 0 0;
+  }
+
+  &__line {
+    border: 1px solid #eaeaea;
+    margin: 65px 0 65px 0;
+    width: 56%;
+
+    @include tablet {
+      width: 83%;
+    }
+
+    @include mobile {
+      width: 46%;
+    }
+  }
+
+  &__dropdown-wrp {
+    display: flex;
+  }
+
+  &__dropdown-btn {
+    @include mobile {
+      @include font(10px, 12px);
+      margin: 0;
+    }
+  }
+
+  &__basket-btn {
+    border: 1px solid #ff6a6a;
+    margin: 48px 0 65px 0;
+    color: #ff6a6a;
+    @include font(16px, 19px, 400);
+    padding: 14px 56px 14px 72px;
+    background-image: url(../img/img-product/basket-btn.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 23px;
+    background-color: white;
+
+    &:hover {
+      -webkit-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+      -moz-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+      box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    }
+
+    &:focus {
+      -webkit-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+      -moz-box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+      box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    }
+
+    &:active {
+      outline: 2px solid black;
+    }
+
+    @include mobile {
+      margin: 65px 0 65px 0;
+    }
+  }
+}
