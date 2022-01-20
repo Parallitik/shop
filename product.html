@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -71,53 +72,116 @@
             </nav>
     </header>
     <main>
-        <section class="registration">
-            <div class="registration__title-wrp">
-                <div class="container">
-                    <h2 class="registration__title-text">registration</h2>
+        <section class="arrivals">
+            <div class="arrivals__title-wrp">
+                <div class="container arrivals__title-flex">
+                    <h2 class="arrivals__title-text">new arrivals</h2>
+                    <ul class="arrivals__list">
+                        <li class="arrivals__item"><a class="arrivals__item-link" href="#">home</a>/</li>
+                        <li class="arrivals__item"><a class="arrivals__item-link" href="#">men</a>/</li>
+                        <li class="arrivals__item"><a class="arrivals__item-link arrivals__item-link_arrivals" href="#">new arrivals</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section class="registration__content">
-            <div class="registration__content-wrp container">
-                <form class="registration__content-form registration-form" action="#">
-                    <fieldset class="registration-form__name">
-                        <p class="registration-form__name-title">Your Name</p>
-                        <legend class="visually-hidden">your name</legend>
-                        <input class="registration-form__name-firstname" id="first-name" type="text" required placeholder="First Name">
-                        <label class="visually-hidden" for="first-name">first name</label>
-                        <input class="registration-form__name-lastname" id="last-name" type="text" required placeholder="Last Name">
-                        <label class="visually-hidden" for="last-name">last name</label>
-                    </fieldset>
-                    <div class="registration-form__radio">
-                        <input class="registration-form__radio-male" type="radio" id="male" name="radio">
-                        <label class="registration-form__radio-male-text registration-form__radio-label" for="male">Male</label>
-                        <input class="registration-form__radio-female" type="radio" id="female" name="radio">
-                        <label class="registration-form__radio-female-text registration-form__radio-label" for="female">Female</label>
-                        <input class="registration-form__radio-other" type="radio" id="other" name="radio">
-                        <label class="registration-form__radio-other-text registration-form__radio-label" for="other">Other</label>
+        <section class="product-carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="background-wrp-slide-1">
+                            <img src="./img/img-product/slide-1.jpg" class="d-block w-100" width="597" height="724" alt="product">
+                        </div>
                     </div>
-                    <fieldset class="registration-form__login">
-                        <p class="registration-form__login-title">Login details</p>
-                        <legend class="visually-hidden">login details</legend>
-                        <input class="registration-form__login-email" id="email" type="email" required placeholder="Email">
-                        <label class="visually-hidden" for="email">email</label>
-                        <input class="registration-form__login-password" id="password" type="password" required placeholder="Password">
-                        <label class="visually-hidden" for="password">password</label>
-                    </fieldset>
-                    <p class="registration-form__bottom-text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                    <button class="registration-form__btn" type="submit"><span class="registration-form__btn-text">join now</span><img class="registration-form__btn-arrow" src="./img/img-registration/arrow-btn.svg" alt="arrow"></button>
-                </form>
-                <div class="registration-content__text">
-                    <p class="registration-content__text-title">loyalty has its perks</p>
-                    <p class="registration-content__text-title-subtitle">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
-                    <ul class="registration-content__text-list">
-                        <li class="registration-content__text-item">15% off welcome offer</li>
-                        <li class="registration-content__text-item">Free shipping, returns and exchanges on all orders</li>
-                        <li class="registration-content__text-item">$10 off a purchase on your birthday</li>
-                        <li class="registration-content__text-item registration-content__text-item_penult">Early access to products</li>
-                        <li class="registration-content__text-item">Exclusive offers & rewards</li>
-                    </ul>
+                    <div class="carousel-item">
+                        <div class="background-wrp-slide-2">
+                        <img src="./img/img-product/slide-2.jpg" class="d-block w-100" width="597" height="724" alt="product">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="background-wrp-slide-3">
+                        <img src="./img/img-product/slide-3.jpg" class="d-block w-100" width="597" height="724" alt="product">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </section>
+        <section class="product-info__wrp">
+                <div class="product-info">
+                    <h2 class="product-info__collection">women collection</h2>
+                    <h2 class="product-info__brand">moschino cheap and chic</h2>
+                    <p class="product-info__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                    <p class="product-info__price">$561</p>
+                    <div class="product-info__line"></div>
+                    <div class="product-info__dropdown-wrp">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose color</button>
+                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Red</a></li>
+                                <li><a class="dropdown-item" href="#">White</a></li>
+                                <li><a class="dropdown-item" href="#">Black</a></li>
+                                <li><a class="dropdown-item" href="#">Orange</a></li>
+                                <li><a class="dropdown-item" href="#">Green</a></li>
+                                <li><a class="dropdown-item" href="#">Grey</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose size</button>
+                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">XS</a></li>
+                                <li><a class="dropdown-item" href="#">S</a></li>
+                                <li><a class="dropdown-item" href="#">M</a></li>
+                                <li><a class="dropdown-item" href="#">L</a></li>
+                                <li><a class="dropdown-item" href="#">XL</a></li>
+                                <li><a class="dropdown-item" href="#">XXL</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">quantity</button>
+                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">1</a></li>
+                                <li><a class="dropdown-item" href="#">2</a></li>
+                                <li><a class="dropdown-item" href="#">3</a></li>
+                                <li><a class="dropdown-item" href="#">4</a></li>
+                                <li><a class="dropdown-item" href="#">5</a></li>
+                                <li><a class="dropdown-item" href="#">6</a></li>
+                                <li><a class="dropdown-item" href="#">7</a></li>
+                                <li><a class="dropdown-item" href="#">8</a></li>
+                                <li><a class="dropdown-item" href="#">9</a></li>
+                                <li><a class="dropdown-item" href="#">10</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="product-info__basket-btn">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section class="products-bottom container">
+            <div class="products-bottom__wrp">
+                <div class="products-bottom__card products-bottom__card_1">
+                    <img class="products-bottom__card-img" src="./img/img-product/product-1.jpg" width="360" height="420" alt="product-1">
+                    <h2 class="products-bottom__card-title">ellery x m'o capsule</h2>
+                    <p class="products-bottom__card-info">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products-bottom__card-price">$52.00</p>
+                </div>
+                <div class="products-bottom__card products-bottom__card_2">
+                    <img class="products-bottom__card-img" src="./img/img-product/product-2.jpg" width="360" height="420" alt="product-2">
+                    <h2 class="products-bottom__card-title">ellery x m'o capsule</h2>
+                    <p class="products-bottom__card-info">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products-bottom__card-price">$52.00</p>
+                </div>
+                <div class="products-bottom__card products-bottom__card_3">
+                    <img class="products-bottom__card-img" src="./img/img-product/product-3.jpg" width="360" height="420" alt="product-3">
+                    <h2 class="products-bottom__card-title">ellery x m'o capsule</h2>
+                    <p class="products-bottom__card-info">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                    <p class="products-bottom__card-price">$52.00</p>
                 </div>
             </div>
         </section>
@@ -207,5 +271,6 @@
         </div>
     </footer>
     <script src="./js/script.js" defer></script>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+.arrivals {
+  &__title-wrp {
+    background-color: #f8f3f4;
+    min-height: 148px;
+    @include flex-center;
+  }
+
+  &__title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__title-text {
+    @include font(24px, 29px);
+    color: #f16d7f;
+    text-transform: uppercase;
+
+    @include mobile {
+      text-align: center;
+      margin: 0 0 32px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    @include font(14px, 17px, 300);
+  }
+
+  &__item-link {
+    text-decoration: none;
+    padding: 0 4px 0 4px;
+    color: $grey-item-text;
+  }
+
+  &__item-link_arrivals {
+    color: #f16d7f;
+    @include font(14px, 17px, 700);
+    padding: 0 0 0 4px;
+  }
+}
