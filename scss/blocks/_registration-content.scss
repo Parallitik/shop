@@ -1,4 +1,27 @@
 .registration-content {
+  &__wrp {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__form {
+    width: 31%;
+    margin: 0 128px 96px 0;
+
+    @include tablet {
+      width: 48%;
+      margin: 0 22px 96px 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin: 0 0 40px 0;
+    }
+  }
+
   &__text {
     width: 57%;
     margin: 64px 0 0 0;

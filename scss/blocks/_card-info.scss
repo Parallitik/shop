@@ -36,7 +36,7 @@
   &__item-color,
   &__item-size,
   &__item-quantity {
-    @include font($line-height: 26px, $font-style: regular);
+    @include font($line-height: 26px);
     color: #575757;
     padding: 0 0 6px 0;
 

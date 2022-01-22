@@ -50,7 +50,7 @@
                     <li>
                         <a class="nav-sub-item__chapter" href="#">woman</a>
                         <ul class="nav-sub-item__list">
-                            <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
+                            <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
                             <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Jackets & Coats</a></li>
                             <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Polos</a></li>
                             <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">T-Shirts</a></li>
@@ -75,7 +75,7 @@
         <section class="arrivals">
             <div class="arrivals__title-wrp">
                 <div class="container arrivals__title-flex">
-                    <h2 class="arrivals__title-text">new arrivals</h2>
+                    <h1 class="arrivals__title-text">new arrivals</h1>
                     <ul class="arrivals__list">
                         <li class="arrivals__item"><a class="arrivals__item-link" href="#">home</a>/</li>
                         <li class="arrivals__item"><a class="arrivals__item-link" href="#">men</a>/</li>
@@ -85,6 +85,7 @@
             </div>
         </section>
         <section class="product-carousel">
+            <h2 class="visually-hidden">product</h2>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -113,54 +114,53 @@
                 </button>
             </div>
         </section>
-        <section class="product-info__wrp">
-                <div class="product-info">
-                    <h2 class="product-info__collection">women collection</h2>
-                    <h2 class="product-info__brand">moschino cheap and chic</h2>
-                    <p class="product-info__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-                    <p class="product-info__price">$561</p>
-                    <div class="product-info__line"></div>
-                    <div class="product-info__dropdown-wrp">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose color</button>
-                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">Red</a></li>
-                                <li><a class="dropdown-item" href="#">White</a></li>
-                                <li><a class="dropdown-item" href="#">Black</a></li>
-                                <li><a class="dropdown-item" href="#">Orange</a></li>
-                                <li><a class="dropdown-item" href="#">Green</a></li>
-                                <li><a class="dropdown-item" href="#">Grey</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose size</button>
-                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">XS</a></li>
-                                <li><a class="dropdown-item" href="#">S</a></li>
-                                <li><a class="dropdown-item" href="#">M</a></li>
-                                <li><a class="dropdown-item" href="#">L</a></li>
-                                <li><a class="dropdown-item" href="#">XL</a></li>
-                                <li><a class="dropdown-item" href="#">XXL</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">quantity</button>
-                            <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">1</a></li>
-                                <li><a class="dropdown-item" href="#">2</a></li>
-                                <li><a class="dropdown-item" href="#">3</a></li>
-                                <li><a class="dropdown-item" href="#">4</a></li>
-                                <li><a class="dropdown-item" href="#">5</a></li>
-                                <li><a class="dropdown-item" href="#">6</a></li>
-                                <li><a class="dropdown-item" href="#">7</a></li>
-                                <li><a class="dropdown-item" href="#">8</a></li>
-                                <li><a class="dropdown-item" href="#">9</a></li>
-                                <li><a class="dropdown-item" href="#">10</a></li>
-                            </ul>
-                        </div>
+        <section class="product-info">
+            <div class="product-info__wrp">
+                <h2 class="product-info__collection">women collection</h2>
+                <h2 class="product-info__brand">moschino cheap and chic</h2>
+                <p class="product-info__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product-info__price">$561</p>
+                <div class="product-info__line"></div>
+                <div class="product-info__dropdown-wrp">
+                    <div class="dropdown product-info__dropdown-color">
+                        <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">choose color</button>
+                        <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Red</a></li>
+                            <li><a class="dropdown-item" href="#">White</a></li>
+                            <li><a class="dropdown-item" href="#">Black</a></li>
+                            <li><a class="dropdown-item" href="#">Orange</a></li>
+                            <li><a class="dropdown-item" href="#">Green</a></li>
+                            <li><a class="dropdown-item" href="#">Grey</a></li>
+                        </ul>
                     </div>
-                    <button class="product-info__basket-btn">Add to Cart</button>
+                    <div class="dropdown product-info__dropdown-size">
+                        <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">choose size</button>
+                        <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">XS</a></li>
+                            <li><a class="dropdown-item" href="#">S</a></li>
+                            <li><a class="dropdown-item" href="#">M</a></li>
+                            <li><a class="dropdown-item" href="#">L</a></li>
+                            <li><a class="dropdown-item" href="#">XL</a></li>
+                            <li><a class="dropdown-item" href="#">XXL</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown product-info__dropdown-quantity">
+                        <button class="btn btn-secondary dropdown-toggle product-info__dropdown-btn" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">quantity</button>
+                        <ul class="dropdown-menu dropdown-menu_scroll" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                            <li><a class="dropdown-item" href="#">5</a></li>
+                            <li><a class="dropdown-item" href="#">6</a></li>
+                            <li><a class="dropdown-item" href="#">7</a></li>
+                            <li><a class="dropdown-item" href="#">8</a></li>
+                            <li><a class="dropdown-item" href="#">9</a></li>
+                            <li><a class="dropdown-item" href="#">10</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <button class="product-info__basket-btn">Add to Cart</button>
             </div>
         </section>
         <section class="products-bottom container">

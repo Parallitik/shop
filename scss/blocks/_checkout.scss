@@ -41,25 +41,21 @@
   }
 
   &__btn {
-    margin: 17px 0 42px 0;
+    margin: 17px 44px 42px 44px;
     text-align: center;
     padding: 15px 0 16px 0;
     width: 273px;
     background-color: #f16d7f;
     border: none;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
   }
 
   &__btn:hover {
-    -webkit-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
-    -moz-box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
-    box-shadow: 0px 5px 21px 10px rgba(249, 162, 174, 0.61);
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 
   &__btn:active {
-    outline: 2px solid black;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
   }
 
   &__btn-text {
