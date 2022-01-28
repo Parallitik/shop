@@ -39,6 +39,14 @@
     text-decoration: none;
     padding: 0 4px 0 4px;
     color: $grey-item-text;
+
+    &:hover {
+      color: #f16d7f;
+    }
+
+    &:active {
+      color: black;
+    }
   }
 
   &__item-link_arrivals {

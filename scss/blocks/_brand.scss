@@ -21,7 +21,7 @@
     background-color: $pink-bkg;
     display: flex;
     align-items: center;
-    padding: 0 0 0 92px;
+    padding: 0 10px 0 92px;
 
     @include tablet {
       padding: 0 0 0 62px;
@@ -37,6 +37,8 @@
     @include font(48px, 58px, 900);
     text-transform: uppercase;
     position: relative;
+    padding: 0 10px 0 0;
+    margin: 10px 0 10px 0;
 
     @include tablet {
       @include font(44px, 52px, 900);
@@ -71,5 +73,6 @@
 
   &__subtitle-pink {
     color: $pink-color;
+    padding: 0 10px 0 0;
   }
 }

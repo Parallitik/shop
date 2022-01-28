@@ -68,15 +68,19 @@
       padding: 9px 8px 10px 9px;
       text-transform: none;
     }
-  }
 
-  &__cards-btn:hover {
-    animation: heartbeat 1.5s ease-in-out infinite both;
-  }
+    &:hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
 
-  &__cards-btn:active {
-    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-      both;
+    &:active {
+      animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
+    }
+
+    &:focus {
+      background-color: #f1e4e6;
+    }
   }
 
   &__shipping {
@@ -129,10 +133,10 @@
     outline: 2px solid #f16d7f;
   }
 
-  &__shipping-city:active,
-  &__shipping-state:active,
-  &__shipping-postcode:active {
-    outline: 2px solid black;
+  &__shipping-city:focus,
+  &__shipping-state:focus,
+  &__shipping-postcode:focus {
+    background-color: #f1e4e6;
   }
 
   &__shipping-form-btn {
@@ -142,14 +146,18 @@
     background-color: #ffffff;
     border: 1px solid #a4a4a4;
     color: #a4a4a4;
-  }
 
-  &__shipping-form-btn:hover {
-    animation: heartbeat 1.5s ease-in-out infinite both;
-  }
+    &:hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
 
-  &__shipping-form-btn:active {
-    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-      both;
+    &:active {
+      animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
+    }
+
+    &:focus {
+      background-color: #f1e4e6;
+    }
   }
 }
