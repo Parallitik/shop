@@ -71,11 +71,12 @@
   }
 
   &__cards-btn:hover {
-    outline: 2px solid #f16d7f;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 
   &__cards-btn:active {
-    outline: 2px solid black;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
   }
 
   &__shipping {
@@ -136,7 +137,7 @@
 
   &__shipping-form-btn {
     text-transform: uppercase;
-    @include font(11px, 13px, 300px, light);
+    @include font(11px, 13px, 300);
     padding: 9px 14px 11px 15px;
     background-color: #ffffff;
     border: 1px solid #a4a4a4;
@@ -144,10 +145,11 @@
   }
 
   &__shipping-form-btn:hover {
-    outline: 2px solid #f16d7f;
+    animation: heartbeat 1.5s ease-in-out infinite both;
   }
 
   &__shipping-form-btn:active {
-    outline: 2px solid black;
+    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
   }
 }

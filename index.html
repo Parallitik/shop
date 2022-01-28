@@ -15,12 +15,15 @@
                     <img src="./img/logo.svg" alt="logo">
                 </a>
                 <div class="header__search">
-                    <img class="header__search-img" src="./img/loupe.svg" alt="loupe">
-                    <!-- <form class="header__search-form" action="#">
-                        <label class="header__search-form-label visually-hidden" for="seacrh">поиск</label>
-                        <input type="search" placeholder="Search" id="search">
-                    </form>
-                    Поиск доделать позже-->
+                    <!-- непонятно почему не отображается иконка -->
+                    <svg class="header__search-img-loupe" width="27" height="28">
+                        <use xlink:href="./img/sprite.svg#loupe"></use>
+                    </svg>
+                        <!-- <form class="header__search-form" action="#">
+                            <label class="header__search-form-label visually-hidden" for="seacrh">поиск</label>
+                            <input type="search" placeholder="Search" id="search">
+                        </form>
+                        Поиск доделать позже-->
                 </div>
             </div>
             <div class="header__logo-form-wrp">
@@ -28,10 +31,16 @@
                     <img src="./img/burger.svg" alt="burger">
                 </button>
                 <a class="header__link" href="./registration-page.html">
-                    <img class="header__link-img" src="./img/person.svg" alt="person">
+                    <!-- непонятно почему не работает заливка и почему не отображается иконка -->
+                    <svg class="header__link-img-person" width="29" height="29">
+                        <use xlink:href="./img/person.svg#person"></use>
+                    </svg>
                 </a>
                 <a class="header__link" href="./shopping-cart.html">
-                    <img class="header__link-img" src="./img/basket.svg" alt="basket">
+                    <svg class="header__link-img-basket" width="33" height="29">
+                        <use xlink:href=".img/sprite.svg#basket"></use>
+                    </svg>
+                    <!-- <img class="header__link-img-basket" src="./img/basket.svg" alt="basket"> -->
                 </a>
             </div>
         </div>
@@ -50,7 +59,7 @@
                 <li>
                     <a class="nav-sub-item__chapter" href="#">woman</a>
                     <ul class="nav-sub-item__list">
-                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
+                        <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Accessories</a></li>
                         <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Jackets & Coats</a></li>
                         <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">Polos</a></li>
                         <li class="nav-sub-item__link"><a class="nav-sub-item__link-subchapter" href="#">T-Shirts</a></li>
