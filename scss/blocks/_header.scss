@@ -17,16 +17,57 @@
   &__nav-title {
     text-transform: uppercase;
     @include font(14px, 17px, 700);
-    padding: 37px 143px 24px 34px;
+    padding: 0 143px 0 34px;
+    margin: 37px 0 24px 0;
+  }
+
+  &__pages-link-wrp {
+    display: none;
+    padding: 0 0 0 34px;
+    margin: 5px 0 5px 0;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__page-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f16d7f;
+    @include font(14px, 17px, 700);
+
+    &:hover {
+      text-decoration: underline;
+      color: $black;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: $black;
+    }
+
+    &:focus {
+      text-decoration: underline;
+      color: $black;
+    }
   }
 
   &__nav-list {
     margin: 0 0 120px 0;
+
+    @include mobile {
+      margin: 24px 0 120px 0;
+    }
   }
 
   &__link {
     text-decoration: none;
     margin: 0 0 0 33px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__link-person {
@@ -53,6 +94,20 @@
     }
   }
 
+  &__logo {
+    &:hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+
+    &:focus {
+      outline: 1px solid #f16d7f;
+    }
+
+    &:active {
+      outline: 1px solid #f16d7f;
+    }
+  }
+
   &__search {
     margin: 0 0 0 41px;
     display: flex;
@@ -60,32 +115,55 @@
 
   &__search-form {
     margin: 0 0 0 10px;
+    padding: 5px 0 0 0;
+  }
+
+  &__search-form-input {
+    border-radius: 30px;
+
+    @include mobile {
+      width: 135px;
+    }
+
+    &:hover {
+      background-color: #f1e4e6;
+    }
+
+    &:focus {
+      background-color: #f1e4e6;
+    }
+  }
+
+  &__search-img-loupe {
+    padding: 8px 0 0 0;
   }
 
   &__search-img-loupe,
   &__link-img-person,
-  &__link-img-basket {
+  &__link-img-basket,
+  &__link-img-burger {
     fill: #e8e8e8;
   }
 
   &__search-img-loupe:hover,
   &__link-img-person:hover,
   &__link-img-basket:hover,
-  &__menu-btn:hover {
-    outline: 2px solid $white-text;
+  &__link-img-burger:hover {
+    fill: #f16d7f;
   }
 
   &__search-img-loupe:focus,
   &__link-img-person:focus,
-  &__link-img-basket:hover,
-  &__menu-btn:focus {
-    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+  &__link-img-basket:focus,
+  &__link-img-burger:focus {
+    fill: #f16d7f;
   }
 
   &__search-img-loupe:active,
   &__link-img-person:active,
+  &__link-img-basket:active,
   &__menu-btn:active {
-    outline: 2px solid $pink-color;
+    fill: #f16d7f;
   }
 
   &__menu-btn {

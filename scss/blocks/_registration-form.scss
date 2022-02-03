@@ -13,36 +13,28 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-  }
 
-  &__name-firstname:hover {
-    outline: 2px solid #f16d7f;
-  }
+    &:hover {
+      outline: 2px solid #f16d7f;
+    }
 
-  &__name-firstname:active {
-    outline: 2px solid black;
-  }
-
-  &__name-firstname:focus {
-    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    &:focus {
+      box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    }
   }
 
   &__name-lastname {
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-  }
 
-  &__name-lastname:hover {
-    outline: 2px solid #f16d7f;
-  }
+    &:hover {
+      outline: 2px solid #f16d7f;
+    }
 
-  &__name-lastname:active {
-    outline: 2px solid black;
-  }
-
-  &__name-lastname:focus {
-    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    &:focus {
+      box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    }
   }
 
   &__radio-label {
@@ -89,36 +81,28 @@
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 20px 0;
-  }
 
-  &__login-email:hover {
-    outline: 2px solid #f16d7f;
-  }
+    &:hover {
+      outline: 2px solid #f16d7f;
+    }
 
-  &__login-email:active {
-    outline: 2px solid black;
-  }
-
-  &__login-email:focus {
-    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    &:focus {
+      box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    }
   }
 
   &__login-password {
     @include font(13px, 16px, 300);
     padding: 12px 0 15px 17px;
     margin: 0 0 15px 0;
-  }
 
-  &__login-password:hover {
-    outline: 2px solid #f16d7f;
-  }
+    &:hover {
+      outline: 2px solid #f16d7f;
+    }
 
-  &__login-password:active {
-    outline: 2px solid black;
-  }
-
-  &__login-password:focus {
-    box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    &:focus {
+      box-shadow: 0px 5px 20px 2px rgba(241, 109, 127, 0.59);
+    }
   }
 
   &__bottom-text {
@@ -156,6 +140,7 @@
 
   &__btn-arrow {
     padding: 0 20px 0 0;
+    fill: #ffffff;
   }
 }
 

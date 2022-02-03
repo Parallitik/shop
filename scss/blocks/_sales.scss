@@ -12,6 +12,8 @@
     border: 1px solid;
     flex-direction: column;
     background-size: cover;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
 
     @include tablet {
       width: 31%;
@@ -24,11 +26,21 @@
     }
   }
 
+  &__item-offer {
+    margin: 10px 0 0 0;
+    padding: 0 10px 0 10px;
+  }
+
   &__item-offer-white {
     color: $white-text;
     @include font(16px, 19px);
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &__item-chapter {
+    padding: 0 10px 0 10px;
+    margin: 0 0 10px 0;
   }
 
   &__item-chapter-pink {
@@ -40,6 +52,7 @@
 
   &__item_woman {
     background-image: url(../img/sales-woman.svg);
+    background-repeat: no-repeat;
 
     @include mobile {
       margin: 0 0 32px 0;
@@ -48,6 +61,7 @@
 
   &__item_men {
     background-image: url(../img/sales-man.svg);
+    background-repeat: no-repeat;
 
     @include mobile {
       margin: 0 0 32px 0;
@@ -56,6 +70,7 @@
 
   &__item_kids {
     background-image: url(../img/sales-kids.svg);
+    background-repeat: no-repeat;
   }
 
   &__item_accesories {

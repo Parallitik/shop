@@ -47,15 +47,19 @@
     width: 273px;
     background-color: #f16d7f;
     border: none;
-  }
 
-  &__btn:hover {
-    animation: heartbeat 1.5s ease-in-out infinite both;
-  }
+    &:hover {
+      animation: heartbeat 1.5s ease-in-out infinite both;
+    }
 
-  &__btn:active {
-    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-      both;
+    &:active {
+      animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
+    }
+
+    &:focus {
+      outline: 1px solid black;
+    }
   }
 
   &__btn-text {

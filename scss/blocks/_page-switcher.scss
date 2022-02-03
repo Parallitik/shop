@@ -1,0 +1,31 @@
+.page-switcher {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &_space {
+      padding: 0 18px 0 0;
+    }
+  }
+
+  &__item-previous {
+    padding: 0 17px 0 0;
+    margin: 0 0 0 15px;
+  }
+
+  &__item-next {
+    padding: 0 0 0 17px;
+    margin: 0 15px 0 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    opacity: 0.5;
+    color: #5d5d5d;
+
+    &:hover {
+      color: #ef5b70;
+    }
+  }
+}

@@ -11,6 +11,16 @@
     color: $black;
   }
 
+  &__chapter:active {
+    text-decoration: underline;
+    color: #f16d7f;
+  }
+
+  &__chapter:focus {
+    text-decoration: underline;
+    color: $black;
+  }
+
   &__list {
     padding: 12px 0 20px 54px;
     @include font(14px, 17px);
@@ -23,10 +33,20 @@
   &__link-subchapter {
     text-decoration: none;
     color: #6f6e6e;
-  }
 
-  &__link-subchapter:hover {
-    text-decoration: underline;
-    color: $social-hover-fill;
+    &:hover {
+      text-decoration: underline;
+      color: $social-hover-fill;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: black;
+    }
+
+    &:focus {
+      text-decoration: underline;
+      color: $social-hover-fill;
+    }
   }
 }

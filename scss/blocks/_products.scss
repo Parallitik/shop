@@ -48,10 +48,6 @@
     background-color: $grey-bkg;
   }
 
-  &__item-img {
-    // object-fit: contain;
-  }
-
   &__item-wrp-overlay {
     position: relative;
   }
@@ -114,7 +110,7 @@
   }
 
   &__item-title {
-    padding: 25px 194px 0 18px;
+    padding: 25px 29px 0 18px;
     @include font(13px, 16px);
     text-transform: uppercase;
   }
@@ -127,7 +123,7 @@
   }
 
   &__item-price {
-    padding: 0 290px 20px 18px;
+    padding: 0 29px 20px 18px;
     color: #f16d7f;
   }
 

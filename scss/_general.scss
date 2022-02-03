@@ -37,7 +37,6 @@ body {
 [type="search"] {
   padding: 10px 20px;
   border: none;
-  outline: 1px solid black;
 }
 
 [type="radio"] {
@@ -149,4 +148,16 @@ body {
     transform: scale(1);
     animation-timing-function: ease-out;
   }
+}
+
+.display-block {
+  display: block !important;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.sprite {
+  display: none;
 }
