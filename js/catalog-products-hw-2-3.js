@@ -1,9 +1,11 @@
+const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses'
+
 class ProductList {
     constructor (container='.catalog__products') {
         this.container = container;
         this.goods = [];
         this.totalPrice = 0;
-        this._fetchProducts(); // метод вызывается в текущем классе
+        this._fetchProducts();
         this.render();
     }
     _fetchProducts() {
@@ -59,29 +61,74 @@ class ProductItem {
     }
 }
 
-// проверка работы кода
+// вывод каталога
 const productList = new ProductList();
 productList.getTotalPrice();
 
-// классы ДЗ №2
 
-class CartListProducts {
-    constructor (container='') {
+
+
+
+
+
+
+
+
+
+
+
+// ДОМАШНЕЕ ЗАДАНИЕ К УРОКУ № 3
+
+class BasketListProducts {
+    constructor (container='.catalog__products') {
         this.container = container;
         this.goods = [];
         this.totalPrice = 0;
-        this.fetchCartGoods();
+        this._addProducts()
+            .then(data => {
+                this.goods = data.contents
+                this.render()
+            });
     };
-    _fetchCartGoods() {
-        this.goods = [];
-        //метод заполняет массив товаров, приобретаемых пользователем
+    _addProducts() {
+        return fetch(`${API}/getBasket.json`)
+            .then(result => result.json())
+            .catch(error => {
+                console.log(`Ошибка выведения данных корзины - ${error}`)
+            });
     }
+    removeProducts() {
+
+    }
+
+    render() {
+        this.goods.forEach(good => {
+            document.querySelector('.catalog__products').insertAdjacentHTML('beforeend', 
+            `<ul class="catalog__products-list">
+                    <li class="catalog__products-item">
+                    <div class="products__item-wrp">
+                    <div class="products__item-wrp-overlay">
+                        <img class="catalog__products-item-img" src="${'./img/img-catalog/card-1.jpg" alt="product-1" width="360" height="420"'}">
+                        <button class="products__item-basket-btn">Add to Cart</button>
+                    </div>
+                    <h3 class="catalog__products-item-title">${good.product_name}</h3>
+                    <p class="catalog__products-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="catalog__products-item-price">$<span>${good.price}</span></p>
+                    </div>
+                    </li>
+                </ul>`);
+        })
+    }
+
     getPriceOfCart(){
         //метод высчитывает общую стоимость товаров в корзине
     }
+
 }
 
-class CartProduct {
+const basketListProducts = new BasketListProducts();
+
+class BasketProduct {
     constructor(product) {
         this.id = product.id;
         this.title = product.title;
