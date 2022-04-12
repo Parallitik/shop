@@ -1,0 +1,64 @@
+[{
+    "id_product": 101,
+    "product_name": "Jacket",
+    "price": 4560,
+    "imgProduct": "./img/products/101.jpg",
+    "imgCart": "./img/cart/101.jpg"
+  },
+  {
+    "id_product": 202,
+    "product_name": "T-Shirt",
+    "price": 1000,
+    "imgProduct": "./img/products/202.jpg",
+    "imgCart": "./img/cart/202.jpg"
+  },
+  {
+    "id_product": 303,
+    "product_name": "Coat",
+    "price": 2500,
+    "imgProduct": "./img/products/303.jpg",
+    "imgCart": "./img/cart/303.jpg"
+  },
+  {
+    "id_product": 404,
+    "product_name": "Polo",
+    "price": 3000,
+    "imgProduct": "./img/products/404.jpg",
+    "imgCart": "./img/cart/404.jpg"
+  },
+  {
+    "id_product": 505,
+    "product_name": "Shoes",
+    "price": 2000,
+    "imgProduct": "./img/products/505.jpg",
+    "imgCart": "./img/cart/505.jpg"
+  },
+  {
+    "id_product": 606,
+    "product_name": "Shirt",
+    "price": 5000,
+    "imgProduct": "./img/products/606.jpg",
+    "imgCart": "./img/cart/606.jpg"
+  },
+  {
+    "id_product": 707,
+    "product_name": "Socks",
+    "price": 100,
+    "imgProduct": "./img/products/707.jpg",
+    "imgCart": "./img/cart/707.jpg"
+  },
+  {
+    "id_product": 808,
+    "product_name": "Jacket-HOT",
+    "price": 5700,
+    "imgProduct": "./img/products/808.jpg",
+    "imgCart": "./img/cart/808.jpg"
+  },
+  {
+    "id_product": 909,
+    "product_name": "Jacket-woll",
+    "price": 1600,
+    "imgProduct": "./img/products/909.jpg",
+    "imgCart": "./img/cart/909.jpg"
+  }
+]

@@ -1,0 +1,66 @@
+.cart-hover-info {
+  position: absolute;
+  background-color: white;
+  z-index: 2;
+  top: 45px;
+  right: 0;
+  border-radius: 10px;
+  border: 10px;
+  border: 1px solid $social-hover-fill;
+
+  &__wrp {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+  }
+
+  &__item-header {
+    @include font(12px, 16px);
+    margin: 5px 0 5px 0;
+    padding: 0 10px 0 0;
+    color: $grey-item-text;
+  }
+
+  &__item-header-empty {
+    @include font(12px, 16px);
+    margin: 10px 0 10px 0;
+    padding: 0 20px 0 20px;
+    color: $grey-item-text;
+  }
+
+  &__list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    padding: 0 0 0 10px;
+    margin: 5px 0 5px 0;
+  }
+
+  &__item {
+    @include font(12px, 16px);
+    margin: 10px 0 10px 0;
+    padding: 10px 10px 0 10px;
+    color: $grey-item-text;
+  }
+
+  &__item-img {
+    width: 50%;
+  }
+
+  &__item-btn {
+    margin: 0 10px 0 0;
+  }
+
+  &__total-price {
+    @include font(12px, 16px);
+    padding: 0 20px 0 20px;
+    margin: 10px 0 10px 0;
+    color: $grey-item-text;
+    text-align: end;
+  }
+}
